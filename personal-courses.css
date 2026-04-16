@@ -1,0 +1,235 @@
+:root{
+    --colorB:#181616;
+    --coloro:rgb(255 58 0 / 85%);
+    --colorho:rgb(255 38 0);
+    --colorb:#322c2c;
+    --colorb2:#524a4a;
+}
+*{
+    box-sizing: border-box;
+}
+html {
+    display: flex;
+    flex-wrap: wrap;
+}
+body {
+    width: 100% !important;
+    margin: 0;
+}
+@media (max-width: 600px) {
+  .home,
+  .my-courses,
+  .add-course,
+  .contact-us {
+    width: 100%;
+  }
+}
+@media (min-width: 601px) {
+  .home,
+  .my-courses,
+  .add-course,
+  .contact-us {
+    width: 50%;
+  }
+}
+.home header,
+.my-courses header,
+.add-course header,
+.contact-us header {
+    background-color: var(--colorB);
+    height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home h1,
+.my-courses h1,
+.add-course h1,
+.contact-us h1 {
+    color:white;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0%;
+    font-size: xxx-large;
+}
+.home nav,
+.my-courses nav,
+.add-course nav,
+.contact-us nav {
+    background-color: var(--coloro);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center;
+    padding: 0 30px;
+
+}
+.home nav a,
+.my-courses nav a,
+.add-course nav a,
+.contact-us nav a {
+    color: var(--colorb);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+
+}
+.home section {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--colorB);
+    margin: 100px 0 0;
+    text-transform: capitalize;
+}
+.home footer {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: calc(100% /5);
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    padding: 0 200px;
+    margin: 150px 0 0;
+
+}
+.home footer a {
+    border: 5px solid var(--colorb);
+    color: var(--colorB);
+    background-color: var(--coloro);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+}
+.home nav a:hover,
+.home footer a:hover,
+.my-courses nav a:hover,
+.add-course nav a:hover,
+.contact-us nav a:hover {
+    color: #eee;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.my-courses h2,
+.add-course h2,
+.contact-us h2 {
+    text-align: center;
+    font-weight: bold ;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--colorB);
+}
+.my-courses table {
+    color: var(--colorb2);
+    width: 80%;
+    height: 50%;
+    min-height: 500px;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 2px solid var(--colorb2);
+}
+.my-courses td {
+    border: 2px solid var(--colorb2) ;
+    padding: 10px;
+    text-align: center;
+    background-color: #e8e8e8;
+    font-size: 18px;
+    color: var(--colorb);
+}
+.my-courses th {
+    background-color: var(--colorb2);
+    color: #eee;
+    padding: 12px;
+    text-align: center;
+    font-size: 20px;
+}
+.my-courses footer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px 10px;
+}
+.my-courses footer a {
+    text-decoration: none;
+    background-color: var(--coloro);
+    font-size: xxx-large;
+    font-weight: bold;
+    border: 1px solid var(--colorb2);
+    border-radius: 50%;
+    padding: 10px 25px;
+    color: var(--colorb);
+}
+.my-courses footer a:hover {
+    color: #eee;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: all 100ms 2ms linear;
+}
+.add-course form,
+.contact-us form {
+    background-color: #eee;
+    padding: 30px 100px;
+    text-transform: capitalize;
+    line-height: 2;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 50px 200px;
+    height: 50%;
+    min-height: 500px;
+    justify-content: space-between;
+    border: 5px solid var(--colorb);
+    border-radius: 25px;
+}
+.add-course article,
+.contact-us article {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 200px;
+    color: var(--colorb2);
+}
+.add-course article input,
+.add-course select,
+.add-course textarea,
+.contact-us article input,
+.contact-us textarea {
+    height: 50%;
+    min-height: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+.add-course .note {
+    vertical-align: text-bottom;
+}
+.add-course button,
+.contact-us button {
+    color: var(--colorb);
+    background-color: var(--coloro);
+    font-weight: bold;
+    width: 100%;
+    max-width: 50px;
+    height: 50%;
+    min-height: 30px;
+}
+.add-course button:hover,
+.contact-us button:hover{
+    width: 100%;
+    max-width: 55px;
+    height: 50%;
+    min-height: 35px;
+    background-color: var(--colorho);
+}
+.contact-us p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--colorB);
+    margin: 50px 0 0;
+
+}
